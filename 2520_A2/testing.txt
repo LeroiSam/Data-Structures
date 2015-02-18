@@ -1,0 +1,20 @@
+Report on Testing
+
+I think that the testing done in the test program is adequate;
+it tests all the functions in the phoneBook.c file with enough 
+inputs that could possibly break it, making sure that all the 
+functions in the phoneBook.c file are properly working.  All of
+the functions in the hash table ADT are used in this, in a 
+slightly more usable interface. The testing program performs all 
+of the tests as expected, it sorts the lists correctly, searches 
+the table correctly and adds files to the table correctly.  
+All testing that I did with the phone program manually were 
+passed as well. 
+
+In addition, I tested both programs with Valgrind to ensure 
+that there were no memory leaks, and this was also passed.
+
+Please note : The same hash function was used for this table
+as was used for lab 6, the testing program and results were 
+included in that lab.  In addition, I included the Lab6 direct-
+ory in the docs directory of this assignment for reference.
