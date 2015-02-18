@@ -1,0 +1,30 @@
+Thoroughness of testing program :
+
+The testing program was used to check that the stack ADT 
+was working correctly with the coordinate ADT.  It has 
+one function that tests correct usage to make sure that 
+the push, pop, and peek functions work correctly (along 
+with the create_stack and destroy_stack).  The second 
+function test when invalid arguments are passed into the 
+stack functions (such as popping and peeking an empty 
+stack, and pushing an empty node).  The results of all 
+the tests must be examined by eye.  Note: All tests are 
+successful.
+
+For testing the memory management and the destroy func-
+tions, I used valgrind (make testValgrindCheck).
+
+Testing for maze program :
+
+To test the maze-solving program, I used this website : 
+http://www.delorie.com/game-room/mazes/ which was provided 
+in the assignment description to create mazes of varying 
+but valid sizes.  I checked the result from my program 
+against the solution found on the website.  In all cases, 
+the two solutions were identical.  
+
+For testing the memory management and the destroy functions, 
+I used valgrind (make mazeValgrindCheck).
+
+
+
