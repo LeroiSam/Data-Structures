@@ -1,0 +1,88 @@
+Testing Document
+
+Testing for the AVL Binary Search Tree ADT was done using the
+test program.  It is able to properly use all of the functions 
+in the ADT.  The tree ADT passed all the tests and these results 
+were confirmed when the ADT was used for the file manager system 
+without any errors.
+
+White-box testing was done manually for the file management system.  
+I answered prompts in ways such that every path could be exercised.  
+To test the collision resolution, there is a file named screwdriver 
+inside a directory named screwdriver and for additional testing, I 
+would use the rename function to give multiple files the same name.
+See below for details on how each operation was tested.
+
+
+Memory Leaks
+
+Memory leak checking was done with valgrind.  There were no memory 
+leaks found in testing.
+
+LOAD TREE
+
+To test whether the tree was being loaded properly, I printed the
+tree and cross-referenced the entries in the tree with the listings
+in the regenerate file.  No entries were missing.  Note : when
+testing this, I altered the print function to see that all of the
+information in the FileInfo structs were correct.
+
+BASIC SEARCH
+
+For the basic search, I searched for files that I knew existed and
+compared the resultant path against what I was expecting.  I also
+searched for files that I knew didn't exist.
+
+FIRST LETTER SEARCH
+
+To test this operation, I checked to see that each returned file 
+name started with the right letter and checked the results of 
+this search to the output from print_tree and could easily see 
+that it didn't miss any file names.
+
+RANGE SEARCH
+
+I used the same techniques as for the first letter search to test
+the range search.
+
+REGEX SEARCH
+
+I tested the regex search by trying several different regular
+expressions, checking that each result matched the expression
+and looking through the other file names to ensure that no 
+results were missed.
+
+DELETE A FILE
+
+To test this operation, I would print the tree before and after
+the deletion to ensure that the entry was properly deleted. Upon
+exiting the program, I would use ls in the file's directory to 
+see if the file was still there.  In addition to this, I tested
+when the user tries to delete a directory and when a user tries
+to delete a file which shares its name with another in the file
+system (both actions are disabled) and found that the proper 
+error messages were outputted.
+
+RENAME A FILE
+
+To test this operation, I printed the tree before and after a
+rename to make sure that the old name disappeared and the new
+name appeared.  I would then search the tree for the new name
+and ensure that it was there and that the path matched the 
+old path.  I checked that the rename was happening in the 
+actual file system by using ls before and after running the 
+program.  I checked that the contents of a file wouldn't
+change upon renaming by entering "test" into the file before
+running the programming and testing to see that it was still
+there afterwards.  In addition, I checked that if the user 
+tried to rename a directory or a file which shared its name
+with another file in the system (both actions are disabled),
+that the appropriate error messages were outputted.
+
+MOVE A FILE
+
+The process for testing this function was very similar to 
+testing the rename function.  In addition, I tested what
+happened when for the new directory, the user inputted :
+a file's name, a non-existing directory and the file's
+original directory.

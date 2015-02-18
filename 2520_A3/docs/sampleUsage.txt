@@ -1,0 +1,106 @@
+This file provides the input and output of successful usage
+of each operation in the main program.  There are also small
+instructions for usage of each of the function.
+
+
+
+*********BASIC SEARCH*********
+
+Name Of File: song
+docs/example/comet/song
+
+
+
+
+*********SEARCH BY FIRST LETTER*********
+
+Letter To Search: c
+Searching For Entries starting with c.
+
+docs/example/raincoat/chip
+docs/example/clippers
+docs/example/colour
+docs/example/comet
+docs/example/screwdriver/cot
+docs/example/raincoat/guitar/crying
+docs/example/screwdriver/curler
+
+
+
+
+*********SEARCH BY ALPHABETICAL RANGE*********
+
+Lower Bound : a
+Upper Bound : d
+
+mdocs/example/orchestra/aid
+mdocs/example/dragon/arrow
+mdocs/example/screwdriver/balcony
+mdocs/example/raincoat/guitar/blonde
+mdocs/example/raincoat/chip
+mdocs/example/clippers
+mdocs/example/colour
+mdocs/example/comet
+mdocs/example/screwdriver/cot
+mdocs/example/raincoat/guitar/crying
+mdocs/example/screwdriver/curler
+
+
+
+
+*********ADVANCED REGEX SEARCH*********
+**When prompted, input the regular expression you want to search**
+
+
+Regex : y$
+
+mdocs/example/screwdriver/balcony
+mdocs/example/ivy
+mdocs/example/comet/tapestry
+mdocs/example/comet/wealthy
+
+
+
+
+*********DELETE A FILE*********
+**When prompted for the name, don't include the path!**
+**Use 'y' or 'Y' to confirm the deletion**
+
+
+Name of File To Be Deleted: song
+Is this the file/directory you were looking for? (y/n)
+docs/example/comet/song
+y
+Deletion successful.
+
+
+
+
+*********RENAME A FILE*********
+**When prompted for the old name or the new, don't include the path**
+**Use 'y' or 'Y' to confirm that the correct file is found**
+
+
+Name of File To Be Renamed: chip
+Is this the file/directory you were looking for? (y/n)
+docs/example/raincoat/chip
+y
+Please input the new name for this file : cracker
+Rename successful.
+
+
+
+
+*********MOVE A FILE*********
+**When prompted for the file's name and new directory, don't include the paths**
+**Use 'y' or 'Y' to confirm that the correct file is found**
+
+
+Name of file to be moved: cracker
+Is this the file/directory you were looking for? (y/n)
+docs/example/raincoat/cracker
+y
+Name of new directory: ivy
+Is this the file/directory you were looking for? (y/n)
+docs/example/ivy
+Move successful.
